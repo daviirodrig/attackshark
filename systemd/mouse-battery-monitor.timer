@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Mouse Battery Monitor every 15 seconds
+Requires=mouse-battery-monitor.service
+
+[Timer]
+OnBootSec=30sec
+OnUnitActiveSec=15sec
+AccuracySec=1sec
+
+[Install]
+WantedBy=timers.target
